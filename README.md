@@ -1,16 +1,67 @@
-# React + Vite
+# React Firebase Dashboard
 
-This template provides a minimal setup to get React working in Vite with HMR and some Oxlint rules.
+A full-stack web application built with **React, Firebase, and Python FastAPI**. The application includes user authentication, a dashboard, an AI chat interface, and a mock online store.
 
-Currently, two official plugins are available:
+## Technologies Used
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+- **React + Vite:** Frontend
+- **Firebase:** User authentication
+- **Python + FastAPI:** Backend API
+- **CSS:** Styling
+- **Lucide React:** Icons
 
-## React Compiler
+## Features
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+### Authentication
+- Email/password login and signup
+- Google Sign-In
+- User session management
 
-## Expanding the Oxlint configuration
+### Dashboard
+- Responsive sidebar navigation
+- User profile and account information
+- Overview, activity, and settings pages
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and Oxlint's TypeScript related rules in your project.
+### AI Chat
+- React chat interface connected to a Python FastAPI backend
+- HTTP requests between the frontend and backend
+- Simulated AI responses without a real model
+- Backend connection status
+
+### Store
+- Product browsing and search
+- Category filtering
+- Shopping cart with quantity management
+- Mock checkout functionality
+
+## Project Structure
+
+```text
+my-app/
+├── backend/
+│   ├── main.py
+│   └── requirements.txt
+├── src/
+│   ├── components/
+│   │   ├── AIChat.jsx
+│   │   └── Store.jsx
+│   ├── App.jsx
+│   ├── App.css
+│   ├── AIChat.css
+│   ├── Store.css
+│   ├── auth.js
+│   └── firebase.js
+└── package.json
+```
+
+## Current Status
+
+This application is a working prototype. Firebase handles authentication, while the Python backend provides mock AI responses. The store uses sample products and simulated purchases.
+
+## Future Development
+
+- Integrate a real AI model
+- Add Firestore database storage
+- Implement real payment processing
+- Save chat and order history
+- Deploy the application
